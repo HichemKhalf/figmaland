@@ -1,0 +1,293 @@
+:root{
+    --bg-clr-dark-blue: #252B42;
+    
+
+    --fs-900: 74px;
+    --fs-700: 48px;
+    --fs-500: 28px;
+    --fs-400: 25px;
+    --fs-200: 15px;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+   
+
+}
+
+.fw-regular{
+    font-weight: var(--fw-regular);
+}
+
+.fw-bold{
+    font-weight: var(--fw-bold);
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Graphik' , sans-serif;
+}
+
+body,
+h1,
+h2,
+h3{
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-size: var(--fs-700);
+    padding-bottom: 16px;
+    font-weight: var(--fw-regular);
+}
+
+img { 
+	border: none;
+	max-width: 100%;
+}
+
+section{
+    padding-top: 80px;
+}
+
+.videoscreen{
+    margin-bottom: 50px;
+}
+
+body{
+    background-color: white;
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    color: #252B42;
+}
+
+a, a:visited, a:hover{
+    text-decoration: none;
+}
+
+
+.links a{
+    font-size: 0.9375rem;
+    color: white;
+}
+
+.links a:not(:last-child){
+    margin-right: 20px;
+}
+
+
+
+.heronav{
+    color: white;
+    --maxwidth: 1920px;
+    --margin: 1rem;
+    width: min(var(--maxwidth), 100%); 
+    background-image: url(/images/hero-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 255px; 
+    
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+.hero{
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+.hamburger span{
+    display: block;
+    background-color: white;
+    height: 3px;
+
+}
+
+.hamburger .line1{
+    width: 26px;
+}
+
+.hamburger .line2{
+    width: 20px;
+}
+
+.hamburger .line3{
+    width: 14px;
+}
+
+.hamburger span:not(:last-child){
+    margin-bottom: 5px;
+}
+
+
+h1{
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 27px;
+}
+
+p{
+    padding: 15px 0;
+    color: #252B42;
+}
+
+.subtitle{
+    width: 80%;
+    font-size: 28px;
+    margin: 0 auto 60px;
+    color: #E8E8E8;
+}
+
+
+.features__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+
+.features__items img{
+    
+    padding: 10px 0;
+}
+
+.fastest{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partners{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.partners_cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #D8D8D8;
+    width: min(275px, 80%);
+}
+
+.pricing{
+    background-color: #252B42;
+    color: white;
+}
+
+.pricing_free,
+.pricing_business{
+    background: white;
+    color: #252B42;
+}
+
+.pricing_standard{
+    background-color: #2091F9;
+    color: white;
+}
+
+.pricing_standard .btn{
+    background-color: white;
+    color: #2091F9;
+}
+
+.contact__form{
+
+}
+
+
+
+/* Media Queries */
+
+@media screen and (min-width: 1024px) {
+
+    .hide-for-desktop{
+        display: none;
+    }
+
+    .heronav{
+        background-image: url(/images/hero.png);
+        
+    }
+
+    .features__items{
+        flex-wrap: unset;
+        gap: 10px;
+        width: 45%;
+        margin: auto;
+    }
+
+    .newsletter{
+
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+    }
+
+}
+
+@media screen and (max-width: 1023px){
+    .hide-for-mobile{
+        display: none;
+    }
+
+
+    .menu{
+        width: 85%;
+    }
+}
+
+.btn{
+
+    padding: 16px 62px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-color: #2091F9;
+    border-radius: 35px;
+    color: white;
+    width: min(275px, 75%);
+    display: inline-block;
+}
+
+input, textarea{
+    width: min(275px, 75%);
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    border: 1px solid #E8E8E8;
+    padding: 16px 62px 16px 10px;
+}
+
+footer{
+    background-color: #252B42;
+    color: white;
+}
