@@ -43,6 +43,11 @@ h3{
     padding: 0;
 }
 
+ul{
+    list-style: none;
+    line-height: 2.8;
+}
+
 h2{
     font-size: var(--fs-700);
     padding-bottom: 16px;
@@ -56,6 +61,8 @@ img {
 
 section{
     padding-top: 80px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .videoscreen{
@@ -67,8 +74,7 @@ body{
 }
 
 main{
-    width: 80%;
-    margin: 0 auto;
+   
     text-align: center;
     color: #252B42;
 }
@@ -94,7 +100,7 @@ a, a:visited, a:hover{
     --maxwidth: 1920px;
     --margin: 1rem;
     width: min(var(--maxwidth), 100%); 
-    background-image: url(images/hero-mobile.png);
+    background-image: url(/images/hero-mobile.png);
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 255px; 
@@ -158,6 +164,11 @@ p{
     color: #E8E8E8;
 }
 
+.contact .subtitle{
+    width: 100%;
+    color: #252B42;
+}
+
 
 .features__items{
     display: flex;
@@ -201,19 +212,53 @@ p{
 }
 
 .pricing{
+    width: 100%;
     background-color: #252B42;
     color: white;
+    padding-bottom: 100px;
+}
+
+.pricing_subtitle{
+    padding-bottom: 80px;
+    color: white;
+    line-height: 2;
+}
+
+.pricing_standard p{
+    color: white;
+}
+
+
+
+.pricing__cards{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    
+}
+
+.pricing__card{
+
+    width: min(80%, 335px);
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 40px 0;
+}
+
+.pricing__card p:first-of-type{
+    padding-bottom: 0;
 }
 
 .pricing_free,
 .pricing_business{
+    
     background: white;
     color: #252B42;
 }
 
 .pricing_standard{
     background-color: #2091F9;
-    color: white;
+    
 }
 
 .pricing_standard .btn{
@@ -221,9 +266,67 @@ p{
     color: #2091F9;
 }
 
+.price_number{
+    display: inline-block;
+    font-size: 74px;
+    font-weight: var(--fw-bold);
+}
+
+.info{
+    display: inline-block;
+}
+
+.contact{
+    margin-bottom: 150px;
+   
+}
+
+
+.contact__column{
+    display: flex;
+    order: 1;
+    flex-direction: column;
+    padding-bottom: 50px;
+    gap: 50px;
+}
+
+.contact__flex__desktop{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact__flex{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    line-height: 2;
+}
+
+.contact__info{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
 .contact__form{
+    order: 2;
+    width: min(90vw, 453px);
+    border-radius: 20px;
+    padding: 40px 0;
+    border: 1px solid #DDDDDD;
 
 }
+
+.contact__input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+}
+
 
 
 
@@ -236,7 +339,7 @@ p{
     }
 
     .heronav{
-        background-image: url(images/hero.png);
+        background-image: url(/images/hero.png);
         
     }
 
@@ -254,6 +357,33 @@ p{
         gap: 50px;
     }
 
+    
+    .pricing__cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+       
+    }
+
+    .pricing__card{
+        margin: unset;
+    }
+
+    .contact__flex__desktop{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .contact__column{
+        order: 2;
+    }
+
+    .contact__form{
+        order: 1;
+    }
+   
+   
 }
 
 @media screen and (max-width: 1023px){
@@ -285,6 +415,10 @@ input, textarea{
     background-color: #F5F5F5;
     border: 1px solid #E8E8E8;
     padding: 16px 62px 16px 10px;
+}
+
+textarea{
+    resize: none;
 }
 
 footer{

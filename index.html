@@ -187,66 +187,84 @@
 
         <section class="pricing">
             <h2>Pricing</h2>
-            <p>
+            <p class="pricing_subtitle">
                 Most Calendars are designed for teams
-            </p>
-            <p class="hide-for-mobile">Slate is Designed for freelancers</p>
-
-            <div class="pricing_free">
-                <p>
-                    Free
-                </p>
-                <p>Organize all apps by hand</p>
-                <p><span>0</span><span>$</span>Per Month</p>
-                <p>Pricing Feature</p>
-                <p>Pricing Feature</p>
-                <p>Pricing Feature</p>
-                <p>Pricing Feature</p>
-                <p>Pricing Feature</p>
-                <a href="#" class="btn">Order Now</a>
-            </div>
-            <div class="pricing_standard">
-                <p>
-                    Standard
-                </p>
-                <p>Organize all apps by hand</p>
-                <p><span>10</span><span  >$</span>Per Month</p>
-                <p>Pricing Feature</p>
-                <p>Pricing Feature</p>
-                <p>Pricing Feature</p>
-                <p>Pricing Feature</p>
-                <p>Pricing Feature</p>
-                <a href="#" class="btn">Order Now</a>
-            </div>
-            <div class="pricing_business">
-                <p>
-                    Business
-                </p>
-                <p>Organize all apps by hand</p>
-                <p><span>99</span><span>$</span>Per Month</p>
-                <p>Pricing Feature</p>
-                <p>Pricing Feature</p>
-                <p>Pricing Feature</p>
-                <p>Pricing Feature</p>
-                <p>Pricing Feature</p>
-                <a href="#" class="btn">Order Now</a>
+            
+            <span class="pricing_subtitle hide-for-mobile"><br>Slate is Designed for freelancers</span></p>
+            <div class="pricing__cards">
+                <div class="pricing__card pricing_free">
+                    <p>
+                        <b>FREE</b>
+                    </p>
+                    <p>Organize all apps by hand</p>
+                    <p class="price"><span class="price_number">0</span><span><b>$</b></span><br>Per Month</p>
+                    <ul>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                    </ul>
+                    <a href="#" class="btn">Order Now</a>
+                </div>
+                <div class="pricing__card pricing_standard">
+                    <p>
+                        <b>STANDARD</b>
+                    </p>
+                    <p>Organize all apps by hand</p>
+                    <p><span class="price_number">10</span><span><b>$</b></span><br>Per Month</p>
+                    <ul>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                    </ul>
+                    <a href="#" class="btn">Order Now</a>
+                </div>
+                <div class="pricing__card pricing_business">
+                    <p>
+                        <b>BUSINESS</b>
+                    </p>
+                    <p>Organize all apps by hand</p>
+                    <p><span class="price_number">99</span><span><b>$</b></span><br>Per Month</p>
+                    <ul>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                    </ul>
+                    <a href="#" class="btn">Order Now</a>
+                </div>
             </div>
 
         </section>
 
         <section class="contact">
             <h2>Contact Us</h2>
-            <p>Most calendars are designed for teams.</p>
-            <p class="hide-for-mobile">Slate is Designed for freelancers</p>
-            <div class="contact__column">
-                <div class="contact__info">
-                    <img src="images/location.png">
-                    <p>6386 Spring St undefined Anchorage, 
-                        Georgia 12473 United States</p>
-                    <img src="images/phone.png">
-                    <p>(843) 555-0130</p>
-                    <img src="images/email.png">
-                    <p>willie.jennings@example.com</p>
+            <p class="subtitle">Most calendars are designed for teams.
+            <span class="hide-for-mobile">Slate is Designed for freelancers</span>
+            </p>
+            <div class="contact__flex__desktop">
+                <div class="contact__column">
+                <div >
+                    <ul class="contact__info">
+                        <li class="contact__flex">
+                            <img src="images/location.png">
+                            <span class="info">6386 Spring St undefined Anchorage, Georgia 12473 United States</span><br>
+                        </li>
+                        <li class="contact__flex">
+                            <img src="images/phone.png">
+                            <span class="info">(843) 555-0130</span><br>
+                        </li>
+                        <li class="contact__flex">
+                            <img  src="images/email.png">
+                            <span class="info">willie.jennings@example.com</span>
+                        </li>
+                    </ul>
+                    
+                    
                 </div>
                 <div class="map hide-for-mobile">
                     <img src="images/map.png" alt="">
@@ -254,69 +272,72 @@
             </div>
 
             <div class="contact__form">
-                <p>Contact Us</p>
-                <form action="">
+                <p><b>Contact Us</b></p>
+                <form class="contact__input">
                     <input type="text" name="name" id="name" placeholder="Your Name">
                     <input type="text" name="email" id="email" placeholder="Your Email">
-                    <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                    <textarea name="message" id="message" placeholder="Your Message" rows="11"></textarea>
                 </form>
+                <a class="btn">Submit</a>
             </div>
+
+        </div>
         </section>
-
-        <footer>
-            <div class="footer_column">
-                    <div>
-                        <p><b>Pages</b></p>
-                            <ul>
-                            <li>Page</li>
-                            <li>Page</li>
-                            <li>Page</li>
-                            <li>Page</li>
-                            <li>Page</li>
-                        </ul>
-                    
-                    </div>
-                    <div>
-                        <p><b>Services</b></p>
-                            <ul>
-                            <li>Service</li>
-                            <li>Service</li>
-                            <li>Service</li>
-                            <li>Service</li>
-                            <li>Service</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <p><b>Ressources</b></p>
-                            <ul>
-                            <li>Ressource</li>
-                            <li>Ressource</li>
-                            <li>Ressource</li>
-                            <li>Ressource</li>
-                            <li>Ressource</li>
-                        </ul>
-                    </div>
-            </div>
-            <div class="contact__info">
-                    <img src="images/location.png">
-                    <p>6386 Spring St undefined Anchorage, 
-                        Georgia 12473 United States</p>
-                    <img src="images/phone.png">
-                    <p>(843) 555-0130</p>
-                    <div>
-                        <img src="svg/twitter.svg" alt="twiter">
-                        <img src="svg/fb.svg" alt="facebook">
-                        <img src="svg/linkedin.svg" alt="linkedin">
-                    </div>
-
+    </main>
+    <footer>
+        <div class="footer_column">
+                <div>
+                    <p><b>Pages</b></p>
+                        <ul>
+                        <li>Page</li>
+                        <li>Page</li>
+                        <li>Page</li>
+                        <li>Page</li>
+                        <li>Page</li>
+                    </ul>
+                
+                </div>
+                <div>
+                    <p><b>Services</b></p>
+                        <ul>
+                        <li>Service</li>
+                        <li>Service</li>
+                        <li>Service</li>
+                        <li>Service</li>
+                        <li>Service</li>
+                    </ul>
+                </div>
+                <div>
+                    <p><b>Ressources</b></p>
+                        <ul>
+                        <li>Ressource</li>
+                        <li>Ressource</li>
+                        <li>Ressource</li>
+                        <li>Ressource</li>
+                        <li>Ressource</li>
+                    </ul>
+                </div>
+        </div>
+        <div class="contact__info">
+                <img src="images/location.png">
+                <p>6386 Spring St undefined Anchorage, 
+                    Georgia 12473 United States</p>
+                <img src="images/phone.png">
+                <p>(843) 555-0130</p>
+                <div>
+                    <img src="/svg/twitter.svg" alt="twiter">
+                    <img src="/svg/fb.svg" alt="facebook">
+                    <img src="/svg/linkedin.svg" alt="linkedin">
                 </div>
 
-            
-        </footer>
+            </div>
+
+        
+    </footer>
 
 
 
-    </main>
+    
 
 
 
