@@ -100,7 +100,7 @@ a, a:visited, a:hover{
     --maxwidth: 1920px;
     --margin: 1rem;
     width: min(var(--maxwidth), 100%); 
-    background-image: url(/images/hero-mobile.png);
+    background-image: url(images/hero-mobile.png);
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 255px; 
@@ -374,7 +374,7 @@ footer p{
     }
 
     .heronav{
-        background-image: url(/images/hero.png);
+        background-image: url(images/hero.png);
         
     }
 
