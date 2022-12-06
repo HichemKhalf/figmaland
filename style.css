@@ -158,15 +158,17 @@ p{
 }
 
 .subtitle{
-    width: 80%;
+    width: 60%;
     font-size: 28px;
     margin: 0 auto 60px;
-    color: #E8E8E8;
+    color: #252B42;
+    
 }
 
-.contact .subtitle{
+.subtitle_hero{
     width: 100%;
-    color: #252B42;
+    font-size: 28px;
+    color: #E8E8E8;
 }
 
 
@@ -299,15 +301,17 @@ p{
     display: flex;
     align-items: center;
     gap: 15px;
-    line-height: 2;
+    line-height: 3;
 }
 
 .contact__info{
 
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-start ;
     gap: 10px;
+    width: min(80% , 285px);
+    margin: 0 auto;
 }
 
 .contact__form{
@@ -326,6 +330,37 @@ p{
     justify-content: center;
     gap: 45px;
 }
+
+footer{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    background-color: #252B42;
+    color: white;
+    padding: 100px 0;
+    gap: 75px;
+}
+
+footer p{
+    color: white;
+}
+
+
+.footer_column{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.social{
+    padding-top: 10px;
+    display: flex;
+    gap: 24px;
+}
+
 
 
 
@@ -347,14 +382,32 @@ p{
         flex-wrap: unset;
         gap: 10px;
         width: 45%;
-        margin: auto;
+        margin: 0 auto 80px;
+    }
+
+    .fastest{
+        padding-top: 200px;
+        padding-bottom: 200px;
     }
 
     .newsletter{
 
         flex-direction: row;
         justify-content: center;
-        gap: 50px;
+        gap: 110px;
+    }
+
+    #email_input{
+
+
+    }
+
+    .testimonials
+
+    .testimonials_review{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     
@@ -382,7 +435,36 @@ p{
     .contact__form{
         order: 1;
     }
+
+    footer{
+
+        flex-direction: row;
+        justify-content: center;
+        gap: 125px;
+    }
+
+    .footer_column{
+        flex-direction: row;
+        text-align: left;
+        
+    }
+
+    .footer_column_x{
+        min-width: 186px;
+    }
+
+    .contact__info{
+        margin: unset;
+    }
+
+    .contact__flex{
+
+        line-height: 1.7;
+    }
    
+    .social{
+        align-items: flex-start;
+    }
    
 }
 
@@ -409,9 +491,12 @@ p{
     display: inline-block;
 }
 
+input{
+    border-radius: 35px;
+}
+
 input, textarea{
     width: min(275px, 75%);
-    border-radius: 5px;
     background-color: #F5F5F5;
     border: 1px solid #E8E8E8;
     padding: 16px 62px 16px 10px;
@@ -419,9 +504,6 @@ input, textarea{
 
 textarea{
     resize: none;
+    border-radius: 5px;
 }
 
-footer{
-    background-color: #252B42;
-    color: white;
-}

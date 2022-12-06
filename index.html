@@ -39,16 +39,16 @@
 
          <section class="hero">
             <h1>The best products start with Figma</h1> 
-            <p class="subtitle">Most Calendars are designed for teams. Slate is designed for freelancers</p>
+            <p class="subtitle_hero">Most Calendars are designed for teams. Slate is designed for freelancers</p>
             <a href="#" class="btn">Try For Free</a>
         </section>
     </div>
 
     <main>
 
-        <section class="features">
+        <section class="features ">
                 <h2 class="fw-regular">Features</h2>
-                <p>Most Calendars are designed for teams, Slate is designed for freelancers</p>
+                <p class="subtitle">Most Calendars are designed for teams, Slate is designed for freelancers</p>
                 <img class="hide-for-desktop videoscreen" src="images/videoscreen_mobile.png">
                 <div class="features__items">
                     <div>
@@ -88,7 +88,7 @@
         <section class="fastest">
             <div>
                 <h2>Fastest way to organize</h2>
-                <p>Most calendars are designed for teams.<br>
+                <p class="">Most calendars are designed for teams.<br>
                 <span class="hide-for-mobile">Slate is designed for freelancers</span>
                 </p>
 
@@ -107,11 +107,11 @@
                 </div>  
                 <img class="hide-for-desktop" src="images/newsletter_mobile.png" alt="">
                 <div>
-                    <p class="fw-bold">Subscribe to our newletter</p>
-                    <p>Available exclusively on FigmaLand</p>
+                    <p><b>Subscribe to our newletter</b><br>
+                    Available exclusively on FigmaLand</p>
                     <div>
                         <form>
-                            <input type="text" placeholder="Your Email">
+                            <input id="email_input" type="text" placeholder="Your Email">
                         </form>
                         <a href="#" class="btn">Subscribe</a>
                     </div>
@@ -122,7 +122,7 @@
         <section class="partners">
             <div>
                 <h2>Partners</h2>
-                <p>Most calendars are designed for teams. 
+                <p class="subtitle">Most calendars are designed for teams. 
                     Slate is designed for freelancers</p>
             </div>
             <div class="partners">
@@ -168,14 +168,14 @@
         <section class="testimonials">
             <h2>Testimonials</h2>
             <img src="images/ibm.png">
-            <p>Most calendars are designed for teams. 
+            <p class="subtitle">Most calendars are designed for teams. 
                 Slate is designed for freelancers who want a 
                 simple way to plan their schedule.</p>
-            <div>
+            <div class="testimonials_review">
                 <img src="images/testimo.png" alt="">
                 <div>
-                    <p>Organizer Across</p>
-                    <p>Ui Designer</p>
+                    <p>Organizer Across<br>
+                    Ui Designer</p>
                 </div>
                 
             </div>
@@ -187,10 +187,10 @@
 
         <section class="pricing">
             <h2>Pricing</h2>
-            <p class="pricing_subtitle">
+            <p class="pricing_subtitle subtitle">
                 Most Calendars are designed for teams
             
-            <span class="pricing_subtitle hide-for-mobile"><br>Slate is Designed for freelancers</span></p>
+            <span class="pricing_subtitle subtitle hide-for-mobile"><br>Slate is Designed for freelancers</span></p>
             <div class="pricing__cards">
                 <div class="pricing__card pricing_free">
                     <p>
@@ -286,48 +286,54 @@
     </main>
     <footer>
         <div class="footer_column">
-                <div>
+                <div class="footer_column_x">
                     <p><b>Pages</b></p>
                         <ul>
-                        <li>Page</li>
-                        <li>Page</li>
-                        <li>Page</li>
-                        <li>Page</li>
-                        <li>Page</li>
+                        <li>Home</li>
+                        <li>Product</li>
+                        <li>Pricing</li>
+                        <li>About</li>
+                        <li>Contact</li>
                     </ul>
                 
                 </div>
-                <div>
-                    <p><b>Services</b></p>
+                <div class="footer_column_x">
+                    <p><b>Timothy</b></p>
                         <ul>
-                        <li>Service</li>
-                        <li>Service</li>
-                        <li>Service</li>
-                        <li>Service</li>
-                        <li>Service</li>
+                        <li>Eleanor Edwards</li>
+                        <li>Ted Robinson</li>
+                        <li>Annette Russel</li>
+                        <li>Jennie Mckinney</li>
+                        <li>Gloria Richards</li>
                     </ul>
                 </div>
-                <div>
-                    <p><b>Ressources</b></p>
-                        <ul>
-                        <li>Ressource</li>
-                        <li>Ressource</li>
-                        <li>Ressource</li>
-                        <li>Ressource</li>
-                        <li>Ressource</li>
+                <div class="footer_column_x">
+                    <p><b>Jane Black</b></p>
+                    <ul>
+                        <li>Philip Jones</li>
+                        <li>Product</li>
+                        <li>Colleen Russel</li>
+                        <li>Marvin Hawkins</li>
+                        <li>Bruce Simmmons</li>
                     </ul>
                 </div>
         </div>
         <div class="contact__info">
-                <img src="images/location.png">
-                <p>6386 Spring St undefined Anchorage, 
-                    Georgia 12473 United States</p>
-                <img src="images/phone.png">
-                <p>(843) 555-0130</p>
-                <div>
-                    <img src="/svg/twitter.svg" alt="twiter">
-                    <img src="/svg/fb.svg" alt="facebook">
-                    <img src="/svg/linkedin.svg" alt="linkedin">
+            <ul class="contact__info_list">
+                <li class="contact__flex">
+                    <img src="images/location.png">
+                    <span class="info">7480 Mockingbird Hill undefined </span><br>
+                </li>
+                <li class="contact__flex">
+                    <img src="images/phone.png">
+                    <span class="info">(843) 555-0130</span><br>
+                </li>
+            </ul>
+               
+                <div class="social">
+                    <img src="svg/twitter.svg" alt="twiter">
+                    <img src="svg/fb.svg" alt="facebook">
+                    <img src="svg/linkedin.svg" alt="linkedin">
                 </div>
 
             </div>
