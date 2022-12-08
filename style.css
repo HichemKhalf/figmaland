@@ -61,7 +61,7 @@ img {
 
 section{
     padding-top: 80px;
-    width: 80%;
+    /* width: 80%; */
     margin: 0 auto;
 }
 
@@ -121,6 +121,10 @@ a, a:visited, a:hover{
     padding-top: 50px;
 }
 
+.hero .btn{
+    margin-top: 60px;
+}
+
 
 .hamburger span{
     display: block;
@@ -158,24 +162,49 @@ p{
 }
 
 .subtitle{
-    width: 60%;
+    
     font-size: 28px;
+    width: 68%;
     margin: 0 auto 60px;
     color: #252B42;
     
 }
 
+.features .subtitle{
+    margin: 0 auto 50px;
+}
+
+.fastest .subtitle,
+.partners .subtitle,
+.pricing .subtitle{
+    margin: 0 auto 80px;
+}
+
+.testimonials .subtitle{
+    font-size: 13px;
+    margin: 30px auto;
+}
+
+.testimonials h2{
+    margin-bottom: 80px;
+}
+
 .subtitle_hero{
-    width: 100%;
+    width: 68%;
+    margin: 0 auto;
     font-size: 28px;
     color: #E8E8E8;
 }
 
+.features{
+    margin-bottom: 80px;
+}
 
 .features__items{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 75px;
    
 }
 
@@ -184,17 +213,41 @@ p{
     padding: 10px 0;
 }
 
+.features_title{
+    width: 55%;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.features_description{
+    width: 60%;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
 .fastest{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 80px;
+    margin-bottom: 80px;
+}
+
+.fastest img{
+    scale: 90%;
+    margin: 0 auto;
 }
 
 .newsletter{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.newsletter img{
+    scale: 90%;
+    margin: 0 auto 60px;
+    
 }
 
 .partners{
@@ -213,6 +266,20 @@ p{
     width: min(275px, 80%);
 }
 
+.testimonials_review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    font-size: 10px;
+    margin-bottom: 66px;
+}
+
+.testimonials span{
+    font-size: 12px;
+}
+
+
 .pricing{
     width: 100%;
     background-color: #252B42;
@@ -221,9 +288,9 @@ p{
 }
 
 .pricing_subtitle{
-    padding-bottom: 80px;
+    
     color: white;
-    line-height: 2;
+    line-height: 40px;
 }
 
 .pricing_standard p{
@@ -397,18 +464,15 @@ footer p{
         gap: 110px;
     }
 
-    #email_input{
 
-
-    }
-
-    .testimonials
 
     .testimonials_review{
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
+   
 
     
     .pricing__cards{
@@ -465,6 +529,10 @@ footer p{
     .social{
         align-items: flex-start;
     }
+
+    .subtitle{
+        
+    }
    
 }
 
@@ -489,21 +557,30 @@ footer p{
     color: white;
     width: min(275px, 75%);
     display: inline-block;
+    font-size: 20px;
+    
 }
 
-input{
-    border-radius: 35px;
-}
+
 
 input, textarea{
     width: min(275px, 75%);
     background-color: #F5F5F5;
     border: 1px solid #E8E8E8;
-    padding: 16px 62px 16px 10px;
+    padding: 19px 62px 19px 35px;
+}
+
+input{
+    border-radius: 35px;
+    width: 85%;
 }
 
 textarea{
     resize: none;
     border-radius: 5px;
+}
+
+.btn_wide{
+    width: 85%;
 }
 
