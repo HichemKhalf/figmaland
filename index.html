@@ -45,12 +45,12 @@
 
     <main>
 
-        <section id="features" class="features ">
+        <section id="features" class="features">
                 <h2 class="fw-regular">Features</h2>
                 <p class="subtitle">Most Calendars are designed for teams.<span class="hide-for-mobile"><br>Slate is designed for freelancers</span></p>
                 <img class="hide-for-desktop videoscreen" src="images/videoscreen_mobile.png">
                 <div class="features__items">
-                    <div>
+                    <div class="features_item">
                         <img src="svg/item1.png">
                             <p class="fw-bold features_title">OpenType features Variable fonts</p>
                             <p class="features_description">Slate helps you see how 
@@ -59,7 +59,7 @@
                                 financial goal.</p>
                         
                     </div>
-                    <div>
+                    <div class="features_item">
                         
                         <img src="svg/item2.png">
                         <p class="fw-bold features_title">Design with real data</p>
@@ -69,7 +69,7 @@
                             financial goal.</p>    
                         
                     </div>
-                    <div>
+                    <div class="features_item">
                         
                         <img src="svg/item3.png">
                         <p class="fw-bold features_title">Fastest way to 
@@ -93,27 +93,30 @@
 
                 <a href="#" class="btn"><b>Try For Free</b></a>
             </div>
-            <img src="images/macbook_mobile.png" alt="macbook">
+            <img class="hide-for-desktop" src="images/macbook_mobile.png" alt="macbook">
+            <img class="hide-for-mobile" src="images/macbook_desktop.png" alt="macbook">
         </section>
 
         <section class="newsletter">
-            <img class="hide-for-mobile" src="images/newsletter_mobile.png" alt="">
+            <img class="hide-for-mobile" src="images/newsletter_desktop.png" alt="">
             <div>
                 <div>
                     <p class="fw-bold">At your fingertips</p>
-                    <h2>Newsletter</h2>
-                    <p class="subtitle">Most calendars are designed for teams. 
+                    <h2 class="hide-for-desktop">Newsletter</h2>
+                    <h2 class="hide-for-mobile">Lightning fast prototyping</h2>
+                    <p class="hide-for-desktop subtitle">Most calendars are designed for teams. 
                         <span class="hide-for-mobile">Slate is designed for freelancers</span></p>
                 </div>  
                 <img class="hide-for-desktop" src="images/newsletter_mobile.png" alt="">
                 <div>
-                    <p class><b>Subscribe to our Newsletter</b><br><br>
+                    <p><b>Subscribe to our Newsletter</b><br>
                     Available exclusively on FigmaLand</p>
                     <div>
                         <form>
                             <input id="email_input" type="text" placeholder="Your Email">
+                            <a href="#" class="btn btn_wide">Subscribe</a>
                         </form>
-                        <a href="#" class="btn btn_wide">Subscribe</a>
+                        
                     </div>
                 </div>
             </div>
@@ -125,7 +128,7 @@
                 <p class="subtitle">Most calendars are designed for teams. 
                     <span class="hide-for-mobile">Slate is designed for freelancers</span></p>
             </div>
-            <div class="partners partners2">
+            <div class="partners_container">
                 <div class="partners_cards">
                     <p>Amazon</p>
                     <img src="images/amazon.png" alt="amazon">
@@ -158,19 +161,15 @@
                     <p>Google</p>
                     <img src="images/google.png" alt="google">
                 </div>
-                <div class="hide-for-mobile partners_cards">
-                    <p>Microsoft</p>
-                    <img src="images/microsoft.png" alt="microsoft">
-                </div>
             </div>
             <a href="#" class="btn"><b>Try For Free</b></a>
         </section>
         <section id="testimonials" class="testimonials">
             <h2>Testimonials</h2>
             <img src="images/ibm.png">
-            <p class="subtitle"><b>Most calendars are designed for teams. 
+            <p class="subtitle">Most calendars are designed for teams. 
                 Slate is designed for freelancers who want a 
-                simple way to plan their schedule.</b></p>
+                simple way to plan their schedule.</p>
             <div class="testimonials_review">
                 <img src="images/testimo.png" alt="">
                 <div>
@@ -197,7 +196,7 @@
                         <b>FREE</b>
                     </p>
                     <p>Organize all apps by hand</p>
-                    <p class="price"><span class="price_number">0</span><span><b>$</b></span><br>Per Month</p>
+                    <p class="price"><span class="price_number">0</span><span class="price_text"><span><b>$</b></span><span>Per Month</span></span></p>
                     <ul>
                         <li>Pricing Feature</li>
                         <li>Pricing Feature</li>
@@ -212,7 +211,7 @@
                         <b>STANDARD</b>
                     </p>
                     <p>Organize all apps by hand</p>
-                    <p><span class="price_number">10</span><span><b>$</b></span><br>Per Month</p>
+                    <p class="price"><span class="price_number">10</span><span class="price_text"><span><b>$</b></span><span>Per Month</span></span></p>
                     <ul>
                         <li>Pricing Feature</li>
                         <li>Pricing Feature</li>
@@ -227,7 +226,7 @@
                         <b>BUSINESS</b>
                     </p>
                     <p>Organize all apps by hand</p>
-                    <p><span class="price_number">99</span><span><b>$</b></span><br>Per Month</p>
+                    <p class="price"><span class="price_number">99</span><span class="price_text"><span><b>$</b></span><span>Per Month</span></span></p>
                     <ul>
                         <li>Pricing Feature</li>
                         <li>Pricing Feature</li>
@@ -252,11 +251,11 @@
                     <ul class="contact__info">
                         <li class="contact__flex">
                             <img src="images/location.png">
-                            <span class="info">6386 Spring St undefined Anchorage, Georgia 12473 United States</span><br>
+                            <span class="info">6386 Spring St undefined Anchorage, Georgia 12473 United States</span>
                         </li>
                         <li class="contact__flex">
                             <img src="images/phone.png">
-                            <span class="info">(843) 555-0130</span><br>
+                            <span class="info">(843) 555-0130</span>
                         </li>
                         <li class="contact__flex">
                             <img  src="images/email.png">
@@ -278,7 +277,7 @@
                     <input type="text" name="email" id="email" placeholder="Your Email">
                     <textarea name="message" id="message" placeholder="Your Message" rows="11"></textarea>
                 </form>
-                <a class="btn">Submit</a>
+                <a class="btn">Send</a>
             </div>
 
         </div>
@@ -321,12 +320,12 @@
         <div class="contact__info">
             <ul class="contact__info_list">
                 <li class="contact__flex">
-                    <img src="images/location.png">
-                    <span class="info">7480 Mockingbird Hill undefined </span><br>
+                    <img src="images/location_white.svg">
+                    <span class="info">7480 Mockingbird Hill undefined </span>
                 </li>
                 <li class="contact__flex">
-                    <img src="images/phone.png">
-                    <span class="info">(843) 555-0130</span><br>
+                    <img src="images/phone_white.svg">
+                    <span class="info">(843) 555-0130</span>
                 </li>
             </ul>
                
@@ -336,7 +335,7 @@
                     <img src="svg/linkedin.svg" alt="linkedin">
                 </div>
 
-            </div>
+        </div>
 
         
     </footer>
