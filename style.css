@@ -152,16 +152,19 @@ a, a:visited, a:hover{
 
 }
 
-.hamburger .line1{
+.hamburger .line1,
+.hamburger .line2,
+.hamburger .line3{
     width: 26px;
+    transition: all .5s  ease-in-out;
 }
 
 .hamburger .line2{
-    width: 20px;
+    transition: all .5s  ease-in-out;
 }
 
 .hamburger .line3{
-    width: 14px;
+    transition: all .5s  ease-in-out;
 }
 
 .hamburger span:not(:last-child){
@@ -410,6 +413,11 @@ p{
     text-align: left;
 }
 
+.footer__info{
+    display: inline-block;
+    text-align: left;
+}
+
 .contact{
     margin-bottom: 150px;
    
@@ -429,7 +437,19 @@ p{
     flex-wrap: wrap;
 }
 
+.footer__contact__flex__desktop{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .contact__flex{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.footer__contact__flex{
     display: flex;
     align-items: center;
     gap: 15px;
@@ -506,13 +526,36 @@ footer p{
 }
 
 
+.footer__social{
+    padding-top: 10px;
+    display: flex;
+    gap: 24px;
+}
+
+
 footer .contact__info{
 
     align-items: center;
 }
 
 
+input, textarea{
+    width: min(275px, 75%);
+    background-color: #F5F5F5;
+    border: 1px solid #E8E8E8;
+    padding: 19px 62px 19px 20px;
+}
 
+input{
+    border-radius: 35px;
+}
+
+
+
+textarea{
+    resize: none;
+    border-radius: 5px;
+}
 
 
 /* Media Queries */
@@ -615,7 +658,13 @@ footer .contact__info{
         margin-left: 10px;
     }
 
+    .testimonials{
+        padding-top: 180px;
+    }
 
+    .testimonials h2{
+        margin-bottom: 64px;
+    }
 
     .testimonials_review{
         display: flex;
@@ -631,6 +680,13 @@ footer .contact__info{
     .testimonials .subtitle{
         font-size: 28px;
         font-weight: 400;
+        width: 50%;
+        margin: 35px auto;
+    }
+
+    .testiomonials__review__text{
+        text-align: left;
+        line-height: 1.5;
     }
 
     .partners{
@@ -660,9 +716,15 @@ footer .contact__info{
         margin-bottom: -43px;
     }
 
-    .contact__flex__desktop{
+    .footer__contact__flex__desktop{
         display: flex;
         justify-content: space-evenly;
+    }
+
+    .contact__flex__desktop{
+        display: flex;
+        justify-content: center;
+        gap: 0px;
     }
 
     .contact__column{
@@ -674,10 +736,22 @@ footer .contact__info{
         margin: unset;
     }
 
+    .contact__form .btn{
+        margin-left: unset;
+        margin-right: 175px ;
+    }
+
     .contact__info_list{
         display: flex;
         flex-direction: column;
         gap: 13px;
+    }
+
+    .footer__contact__info_list{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        
     }
 
     footer{
@@ -697,11 +771,30 @@ footer .contact__info{
         min-width: 186px;
     }
 
-    .contact__info{
+    .footer__contact__info{
         margin: unset;
     }
 
+    .contact__info{
+        margin-left: 50px;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 25px;
+    }
+
     .contact__flex{
+        flex-direction: column;
+        line-height: 1.7;
+    }
+
+   
+
+    .contact__flex:nth-child(1){
+        width: 45%;
+    }
+
+    .footer__contact__flex{
 
         line-height: 1.7;
     }
@@ -710,7 +803,23 @@ footer .contact__info{
         align-items: flex-start;
     }
 
-  
+    .footer__social{
+        padding-top: 30px;
+        align-items: flex-start;
+    }
+
+    .footer__category{
+        font-size: 20px;
+    }
+
+    .info{
+        text-align: center;
+    }
+
+
+    input, textarea {
+        width: min(353px, 75%);
+    }
 }
 
 @media screen and (max-width: 1023px){
@@ -725,26 +834,25 @@ footer .contact__info{
 }
 
 
-
-
-
-input, textarea{
-    width: min(275px, 75%);
-    background-color: #F5F5F5;
-    border: 1px solid #E8E8E8;
-    padding: 19px 62px 19px 20px;
+.hamburger.open .line1{
+    transform:  rotate(45deg) translateY(10px);
+    
+    
 }
 
-input{
-    border-radius: 35px;
+.hamburger.open .line3{
+    transform: rotate(-45deg) translateY(-13px);
+}
+
+.hamburger.open .line2{
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+    
 }
 
 
 
-textarea{
-    resize: none;
-    border-radius: 5px;
-}
 
 
 
