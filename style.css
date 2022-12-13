@@ -112,6 +112,14 @@ a, a:visited, a:hover{
     margin-right: 20px;
 }
 
+.links_mobile{
+    position: fixed;
+    top: 62;
+    left: -1000px;
+    transition: all .5 ease-in-out;
+
+}
+
 
 
 .heronav{
@@ -145,10 +153,17 @@ a, a:visited, a:hover{
 }
 
 
+.hamburger{
+    position: relative;
+    width: 26px;
+    height: 16px;
+}
+
 .hamburger span{
     display: block;
     background-color: white;
     height: 3px;
+    position: absolute;
 
 }
 
@@ -157,14 +172,21 @@ a, a:visited, a:hover{
 .hamburger .line3{
     width: 26px;
     transition: all .5s  ease-in-out;
+    transform-origin: left center;
+}
+
+
+.hamburger .line1{
+   top: 0;
 }
 
 .hamburger .line2{
-    transition: all .5s  ease-in-out;
+    top: 7px;
+   
 }
 
 .hamburger .line3{
-    transition: all .5s  ease-in-out;
+   top: 14px;    
 }
 
 .hamburger span:not(:last-child){
@@ -835,13 +857,19 @@ textarea{
 
 
 .hamburger.open .line1{
-    transform:  rotate(45deg) translateY(10px);
+    
+    transform:  rotate(45deg);
+    top: -3px;
+    
     
     
 }
 
 .hamburger.open .line3{
-    transform: rotate(-45deg) translateY(-13px);
+    
+    transform: rotate(-45deg);
+    top: 15px;
+
 }
 
 .hamburger.open .line2{
