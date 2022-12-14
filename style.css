@@ -93,10 +93,20 @@ body{
     
 }
 
-.heronav.overlay{
-    position: relative;
-    background-color: rgba(255, 255, 255, 0.3);
-    z-index: 1;
+.overlay{
+    position: fixed;
+    top: 77px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(#252B42, transparent);
+    opacity: 0;
+    z-index: 5;
+    transition: all .5s ease-in-out;
+}
+
+.overlay.open{
+    opacity: 1;
 }
 
 main{
@@ -124,7 +134,8 @@ a, a:visited, a:hover{
     position: fixed;
     display: flex;
     flex-direction: column;
-    background-color: #D8D8D8;
+    color: #252B42;
+    background-color: ghostwhite;
     border-radius: 5px;
     padding: 30px 75px;
     top: 100px;
@@ -133,14 +144,24 @@ a, a:visited, a:hover{
     text-align: center;
     gap: 15px;
     font-size: 20px;
-    z-index: 2;
+    z-index: 10;
+    text-decoration: none;
 
+}
+
+.links_mobile a,.links_mobile a:visited,.links_mobile a:hover{
+    color: #252B42;
 }
 
 .links_mobile.open{
     
     left: 20%;
 }
+
+/* .menu_item.selected{
+    top: 100px;
+    left: -1000px;
+} */
 
 .heronav{
     color: white;
@@ -161,7 +182,23 @@ a, a:visited, a:hover{
     width: 75%;
     margin: 0 auto;
     padding-top: 15px;
+    padding: 15px 0 0 0;
+    
 }
+
+.menu_wrap{
+    background: transparent;
+    transition: all .5s ease-in-out;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.menu_wrap.open{
+    width: 100%;
+    background: #252B42;
+}
+
+
 
 .hero{
     text-align: center;
